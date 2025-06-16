@@ -9,6 +9,8 @@ public class SwordVisual : MonoBehaviour
 
     private const string ATTACK = "Attack";
 
+    private bool canAttack = true;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -24,4 +26,12 @@ public class SwordVisual : MonoBehaviour
         animator.SetTrigger(ATTACK);
     }
 
+    public void OnAttackAnimationEnd()
+    {
+
+        canAttack = true;
+    }
+
 }
+
+

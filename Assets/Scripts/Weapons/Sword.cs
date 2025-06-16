@@ -7,6 +7,7 @@ public class Sword : MonoBehaviour
 
     public void Attack()
     {
+
         OnSwordSwing?.Invoke(this, EventArgs.Empty);
     }
 }
