@@ -16,7 +16,7 @@ public class GameInput : MonoBehaviour
         Instance = this;
         playerInputActions = new PlayerInputActions();
         playerInputActions.Player.Enable();
-        playerInputActions.Combat.Enable(); // <--- добавьте эту строку
+        playerInputActions.Combat.Enable(); 
         playerInputActions.Combat.Attack.started += PlayerAttack_started;
     }
 
